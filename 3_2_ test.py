@@ -1,15 +1,5 @@
-import pytest
-from selene.support.shared import browser
 from selene import be, have
-
-@pytest.fixture()
-def br_size():
-    browser.config.window_width = 800
-    browser.config.window_height = 600
-@pytest.fixture()
-def br_size1():
-    browser.config.window_width = 1000
-    browser.config.window_height = 600
+from selene.support.shared import browser
 
 
 def test_sl1(br_size):
