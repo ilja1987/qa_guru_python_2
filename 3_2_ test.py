@@ -11,4 +11,4 @@ def test_sl1(br_size):
 def test_sl2(br_size1):
     browser.open('https://google.com')
     browser.element('[name="q"]').should(be.blank).type('selene').press_enter()
-    browser.element('[id="search"]').should(have.text('selenoid: User-oriented Web UI browser tests in Python'))
+    browser.element('[id="search"]').should(have.no.text('selenoid: User-oriented Web UI browser tests in Python'))
